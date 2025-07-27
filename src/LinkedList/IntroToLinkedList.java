@@ -20,9 +20,22 @@ class Node{
 }
 
 public class IntroToLinkedList {
+
+    public static Node arrToLL(int[] arr){
+        Node head = new Node(arr[0]);
+        Node prev = head;
+        for(int i=1; i<arr.length; i++){
+            Node temp = new Node(arr[i]);
+            prev.next = temp;
+            prev = temp;
+        }
+        return head;
+    }
+
     public static void main(String[] args) {
-        int[] arr = {1,2,3,4,5};
-        Node x = new Node(arr[0]);
-        System.out.println(x.data);
+        int[] arr = {12,2,3,4,5};
+
+        Node head = arrToLL(arr);
+        System.out.println(head.data);
     }
 }

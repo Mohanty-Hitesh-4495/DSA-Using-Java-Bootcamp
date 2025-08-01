@@ -16,7 +16,7 @@ public class Node {
         this.next = next;
     }
 
-    public static Node convertArr2DLL(int[] arr) {
+    public static Node convertArr2LL(int[] arr) {
         Node head = new Node(arr[0]);
         Node temp = head;
         for (int i=1; i<arr.length; i++) {

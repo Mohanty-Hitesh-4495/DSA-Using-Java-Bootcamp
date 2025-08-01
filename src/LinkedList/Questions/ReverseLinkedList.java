@@ -24,7 +24,7 @@ public class ReverseLinkedList {
 
     public static void main(String[] args) {
         int[] arr = new int[] {1,2,3,4,5};
-        Node head = Node.convertArr2DLL(arr);
+        Node head = Node.convertArr2LL(arr);
         System.out.println("Linked List before Reversal: ");
         Node.printLL(head);
         head = InPlaceReverseLinkedList(head);

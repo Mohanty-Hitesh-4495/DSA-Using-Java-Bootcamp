@@ -62,8 +62,8 @@ public class CheckPalindromeLL {
     public static void main(String[] args) {
         int[] arr1 = new int[]{1,2,3,4,3,2,1};
         int[] arr2 = new int[]{1,5,3,2,1};
-        Node head1 = Node.convertArr2DLL(arr1);
-        Node head2 = Node.convertArr2DLL(arr2);
+        Node head1 = Node.convertArr2LL(arr1);
+        Node head2 = Node.convertArr2LL(arr2);
 
         if(isPalindrome2(head1))
             System.out.println("Is a Palindrome :)");

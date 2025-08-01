@@ -28,7 +28,7 @@ public class LengthOfCycle {
     public static void main(String[] args) {
         int[] arr = new int[]{3, 2, 0, 4, 5, 6};
         Node head = makeCyclicLL(arr,1);
-//        Node head = Node.convertArr2DLL(arr);
+//        Node head = Node.convertArr2LL(arr);
         System.out.println("Linked List: ");
         printCyclicLL(head, arr.length+2);
         if(hasCycle(head)) {

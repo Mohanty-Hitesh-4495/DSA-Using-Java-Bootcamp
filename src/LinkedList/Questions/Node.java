@@ -28,6 +28,9 @@ public class Node {
     }
 
     public static void printLL(Node head){
+        if(head == null){
+            return;
+        }
         while(head.next != null){
             System.out.print(head.data + "->");
             head = head.next;

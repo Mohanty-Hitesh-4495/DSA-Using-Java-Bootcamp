@@ -25,6 +25,8 @@ public class ListNode {
             System.out.print(head.data + "->");
             head = head.next;
         }
+        System.out.print(head.data);
+        System.out.println();
     }
 
 }

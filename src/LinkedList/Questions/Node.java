@@ -37,4 +37,14 @@ public class Node {
         }
         System.out.println(head.data);
     }
+
+    public static int getSize(Node head){
+        int count = 0;
+        Node temp = head;
+        while(temp != null){
+            count++;
+            temp = temp.next;
+        }
+        return count;
+    }
 }

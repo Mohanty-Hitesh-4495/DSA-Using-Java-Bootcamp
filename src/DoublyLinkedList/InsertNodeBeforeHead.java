@@ -1,5 +1,4 @@
 package DoublyLinkedList;
-import static DoublyLinkedList.IntroToDLL.printDLL;
 
 public class InsertNodeBeforeHead {
     public static Node convertArr2DLL(int[] arr) {
@@ -28,11 +27,11 @@ public class InsertNodeBeforeHead {
 
         // Print the doubly linked list
         System.out.println("Doubly Linked List Initially: ");
-        printDLL(head);
+        Node.printDLL(head);
 
         System.out.println("Doubly Linked List After Inserting before head with value 10:");
 
         head = insertNodeBeforeHead(head, 10); // Insert a node with value 10 before head
-        printDLL(head);
+        Node.printDLL(head);
     }
 }

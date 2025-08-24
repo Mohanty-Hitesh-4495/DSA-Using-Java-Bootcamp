@@ -30,6 +30,24 @@ class Node{
         System.out.println();
     }
 
+    // Function to print Doubly Linked List from tail to head
+    public static void reversePrintDLL(Node head){
+        Node temp = head;
+
+        while(temp.next != null){
+            temp = temp.next;
+        }
+
+        while( temp != null){
+            System.out.print(temp.data);
+            temp = temp.prev;
+            if(temp != null){
+                System.out.print("->");
+            }
+        }
+        System.out.println();
+    }
+
     // function to convert array to doubly linked list..
     public static Node convertArrToDLL(int[] arr){
         Node head = new Node(arr[0]);
